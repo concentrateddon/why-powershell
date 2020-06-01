@@ -1,10 +1,10 @@
-# Summary
+# Зміст
 
 * [ReadMe](README.md)
-* [About this Book](manuscript/About.md)
-* [A Brief Overview](manuscript/chapter1.md)
-* [Why Scripting? Why a Shell?](manuscript/chapter2.md)
-* [Why PowerShell?](manuscript/chapter3.md)
-* [The Business Story](manuscript/chapter4.md)
-* [Where Can You Learn More?](manuscript/chapter5.md)
-* [Why PowerShell Remoting? (While we're answering "Whys")](manuscript/chapter6.md)
+* [Про книгу](manuscript/About.md)
+* [Короткий опис](manuscript/chapter1.md)
+* [Навіщо писати скрипти? Чому саме Shell?](manuscript/chapter2.md)
+* [Чому саме PowerShell?](manuscript/chapter3.md)
+* [Бізнес історія](manuscript/chapter4.md)
+* [Де дізнатися більше?](manuscript/chapter5.md)
+* [Віддалене керування через PowerShell? ( Відповідаємо на всі гарячі  питання)](manuscript/chapter6.md)

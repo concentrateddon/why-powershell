@@ -1,1 +1,1 @@
-Ever wonder why PowerShell is a thing, or find yourself having to explain it to someone else? Here's a concise guide that does just that.
+Ви коли небудь замислювались чому саме PowerShell, або були в ситуації коли  вам необхідно пояснити це комусь іншому? До вашої уваги короткий довідник який містить саме цю інформацію.
