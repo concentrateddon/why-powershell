@@ -1,17 +1,18 @@
-# The Business Story
+# Бізнес історія
 
-If you've ignored PowerShell up until now, or were skeptical about it, let's look at what Microsoft has done.
+Якщо ви досі ігнорували PowerShell або ставились до цього скептично, давайте розглянемо, що зробили Microsoft.
 
-In **version 1**, PowerShell emerged as a the first management interface specifically designed for administrative automation. 
+У **версії 1**, PowerShell з'явився як перший інтерфейс управління, спеціально розроблений для автоматизації адміністративних задач.
 
-In **version 2**, PowerShell gained native remote management capabilities, enabling remote management of any server or client running PowerShell. PowerShell's "reach" extended to hundreds of management APIs, enabling real-world management. The product also matured a deceptively simple, powerful scripting language that can be used to build professional-grade units of automation.
+У **версії 2** PowerShell отримав вбудовані можливості віддаленого управління, котрв дозволяють віддалене управління будь-яким сервером чи клієнтом, який підтримує PowerShell. Охоплення PowerShell поширилось на сотні API управління, які дозволяли управління в існуючому середовищі.
+Продукт досягнув зрілості як на перший погляд проста, потужна мова скриптування, яку можна використовувати для створення одиниць автоматизації професійного рівня.
 
-In **version 3**, PowerShell learned to run long-running tasks in a disconnected, stateless fashion - called _workflows_. The product's reach extended even further, covering all major Microsoft server platforms, and pushing into Microsoft's cloud offerings. By this version, PowerShell was a very real thing, so much so that many Microsoft native GUIs began to use PowerShell "under the hood."
+У **версії 3** PowerShell навчився виконувати довготривалі завдання за домогою способів відключення та відсутності даних про попередній стан, які називаються робочі цикли. Доступність продукту ще більше розширилась, охоплюючи всі основні серверні платформи Майкрософт і ініціативно проштовуючи хмарні пропозиції Microsoft. В часи цієї версії PowerShell був настільки цінним та важливим, що багато рідних графічних інтерфейсів Microsoft почали використовувати PowerShell "під капотом".
 
-In **version 4**, PowerShell was extended with even more "reach," and gained a new technology: Desired State Configuration. DSC lets administrators describe, in more-or-less plain text, how a computer should be configured. Leveraging the existing investment in PowerShell, DSC then puts the machine into that state, and _keeps_ it there.
+У **версії 4** PowerShell був розширений ще більшим "охопленням" та отримав нову технологію: Бажана Конфігурація Стану. DSC (Desired State Configuration Бажана Конфігурація Стану - прим. перекладача) дозволяє адміністраторам описати більш-менш простим текстом, як повинен бути налаштований комп'ютер. Використовуючи існуючий функціонал PowerShell DSC переводить машину в бажаний стан та _зберігає_ її в ньому.
 
-In **version 5**, PowerShell matured DSC and extended its "tool making" capabilities into professional developer space. With support in Visual Studio, PowerShell started to span a much broader spectrum of user, from entry-level administrators to advanced developers.
+У **версії 5** PowerShell DSC досягнув зрілості  та розширив свої можливості "створення інструментів" для професійних розробників. З підтримкою в Visual Studio, PowerShell почав охоплювати значно ширший спектр користувачів, від адміністраторів початкового рівня до досвідчених розробників.
 
-The point is that Microsoft has _clearly_ been building PowerShell since its v1 release in 2006. They've done so in a way that _they've never done before_ in languages like VBScript, and they've done so while maintaining consistency and efficiency.
+Справа в тому, що Microsoft  _очевидно_ розвивав PowerShell з моменту випуску v1 в 2006 році. Вони зробили це в такий спосіб, який _раніше не використовували_ на таких мовах, як VBScript, зберігаючи послідовність та ефективність.
 
-What's more, PowerShell has inspired a broad ecosystem of supporting vendors, and an enthusiastic global community. Administrators are, more than ever, able to get assistance, answers, and even ready-made solutions from those vendors and that community.
+Більше того, PowerShell надихнув широку екосистему підтримки виробників та завзяту глобальну спільноту. Як ніколи, адміністратори можуть отримати допомогу, відповіді та навіть готові рішення від виробників та громади.

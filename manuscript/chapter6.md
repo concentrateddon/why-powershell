@@ -1,33 +1,33 @@
-# Why PowerShell Remoting? (While We're Answering "Whys")
+# Віддалене керування через PowerShell? ( Відповідаємо на всі "Чому")
 
-Another big question that comes along is, "why should we enable PowerShell Remoting?"
+Ще одне велике питання, яке виникає - "чому ми повинні включати віддалене керування через PowerShell ?"
 
-First, understand a couple of things - which are going to seem a bit rude. Sorry.
-- PowerShell Remoting has been around since 2008. If you're seriously just asking yourself this now, then you're doing a poor job of managing your IT environment. Also released since 2008 were smart watches, Microsoft (formerly Windows) Azure, the Tesla Roadster, Disney's "Frozen," affordable LED light bulbs, and the iPhone 3G, 3GS, 4, 4S, 5, 5S, and 6 models. Just in case you missed those as well.
-- Information technology is an industry of change. The perfectly reasonable decisions you made in 2003 are going to need to be periodically revisited, due to aforementioned change.
+Спершу зрозумійте пару речей - які здадуться трохи грубими. Вибачте.
+- Віддалене керування через PowerShell  існує з 2008 року. Якщо ви серйозно задаєтесь цим питанням лише зараз, значить ви погано справляєтесь з управлінням свого ІТ-середовища. Також з 2008 року були випущені  смарт-годинники, Microsoft (раніше Windows) Azure, Тесла Родстер,  "Крижане серце" від Діснея, доступні світлодіодні лампочки, а також iPhone моделі 3G, 3GS, 4, 4S, 5, 5S та 6. Про всяк випадок, якщо ви раптом і їх пропустили.
+- Інформаційні технології - це галузь змін. Цілком розважливі рішення, які ви прийняли у 2003 році, необхідно періодично переглядати через вищезазначені зміни.
 
-With that out of the way, let's briefly talk about...
-## What is PowerShell Remoting?
-Remoting is simply a way for management tools on one computer to talk to services on another computer, so that you can remotely manage those services. 
+Так з цим розібрались, тепер давайте коротко поговоримо про...
+## Що таке віддалене керування через PowerShell?
+Віддалене керування - це простий спосіб для інструментів управління на одному комп'ютері спілкуватись з сервісами на іншому комп'ютері дозволяючи вам віддалене керування цими сервісами.
 
-Remoting is based on HTTP, and uses a protocol called WS-Management (WS-MAN). It requires servers to have a single open port, and routes all incoming management traffic through that one port. WS-MAN traffic can be logged, can be proxied through security servers (provided by third parties), and can be completely encrypted by means of SSL. 
+Віддалене керування базується на HTTP та використовує протокол під назвою WS-Management (WS-MAN). Він вимагає, щоб сервери мали єдиний відкритий порт, і маршрутизували весь вхідний трафік для управління через цей один порт. Трафік WS-MAN може логуватись, маршрутизуватись через сервери безпеки (надані третьою стороною) і може бути повністю зашифрований за допомогою SSL.
 
-Like all HTTP traffic, Remoting is essentially transmitting text back and forth. Remoting simply specifies a way for that text to be laid out (predominantly in an XML variant) so that tools and services can understand each other.
+Як і увесь HTTP трафік , віддалене керування по суті передає текст туди і назад. Віддалене керування просто визначає спосіб представлення цього тексту (переважно у XML варіанті ), щоб інструменти та служби могли зрозуміти один одного.
 
-Remoting does not in any way affect the security of your network under default conditions. It does not, by default, transmit usernames or passwords - encrypted or otherwise. In a non-domain environment, you can create an environment where passwords would be transmitted, but it really wants that to be encrypted by SSL, so you'd be using HTTPS.
+Віддалене керування жодним чином не впливає на безпеку вашої мережі при налаштуваннях за замовчуванням. За замовчуванням імена користувачів чи паролі (зашифровані чи в якомусь іншому вигляді) не передаються. У недоменному середовищі ви можете створити середовище, в якому будуть передаватися паролі, але вимагається, щоб вони було зашифровані SSL, тобто ви будете використовувати HTTPS.
 
-Remoting doesn't in any way give anyone special privileges. The technology literally can't let someone do something they don't have permission to do, unless you've gone through a rather complex setup for something called _delegated administration_. In that case, you can enable specific users to perform specific tasks that they wouldn't normally be able to - but only through the specific channel and interface you've set up. 
+Віддалене керування ні  в якому разі  не надає нікому особливих прав. Технологія буквально не може дозволити комусь робити те, на що вони не мають дозволу, звичайно якщо ви не пройшли досить складну процедуру для налаштування делегованого адміністрування. У такому випадку ви можете дозволити конкретним користувачам виконувати конкретні завдання, які для них зазвичай не є дозволеними, але лише через визначений канал та інтерфейс, який ви створили.
 
-## Comparing Remoting to what came before
-Before Remoting, most Windows remote management was conducted over Remote Procedure Calls, or RPCs. These usually employed port-hopping, making them incredibly difficult to manage through a firewall. Contrast that with the one port you have to deal with in Remoting.
+## Порівняння віддаленого керування з тим, що було раніше
+До появи віддаленого керування більшість дистанційного керування у Windows здійснювалося через віддалений виклик процедур  або RPC. Зазвичай вони застосовують перехідні порти, що значно ускладнює їхнє управління через брандмауер. На відміну від одного порта з яким доведеться мати справу під час використання віддаленого керування.
 
-A lot of organizations today simply install management tools on servers, and then use Remote Desktop to "remotely manage." That's an incredibly poor idea, and is a major reason why Windows Server take so many patches, so many reboots, and other maladies. The code needed to support a full GUI, and therefore RDP, is massive - and that means patches are inevitable. Running management tools _on the server_, usually under administrator credentials, is opening the door to an attack.
+Багато організацій в наш час просто встановлюють інструменти управління на сервери, а потім використовують віддалений робочий стіл для "віддаленого управління". Це неймовірно погана ідея і основна причина чому Windows Server отримує стільки патчів, стільки перезавантажень та інших захворювань. Код необхідний для підтримки повного графічного інтерфейсу, а отже, і RDP, є дуже громіздким, а це означає що патчі є неминучими. Запуск інструментів управління _на сервері_, як правило, з повноваженнями адміністратора, відкриває двері для атаки.
 
-In short, most organizations seem to be worred about the security "implications" of PowerShell Remoting. The implications are **significant** - Remoting is **much** more secure than what you've been doing. It's also more efficient, imposes less overhead on servers, and lets servers run with a leaner operating system that will require fewer patches, fewer reboots, and fewer service packs. Those servers will also boot faster, run fewer processes, run fewer services, and consume less storage space for the OS. Those servers will require less memory overhead for the OS, meaning you can pack more of 'em into a virtualization host. Sounds horrible, right?
+Коротше кажучи, виглядає так, що більшість організацій, стурбовані безпекою через "наслідки" від віддаленого керування PowerShell. Наслідки **значні** - віддалене керування **набагато** безпечніше, ніж те, що ви робили раніше. Воно також є більш ефективним,  приносить менше накладних витрат на сервери і дозволяє серверам працювати з більш компактною операційною системою, яка вимагатиме менше патчів, менше перезавантажень і менше сервіс паків. Також ці сервери завантажуватимуться швидше, запускатимуть меншу кількість процесів, запускатимуть менше сервісів та будуть споживати менше місця для зберігання ОС. Ці сервери вимагатимуть менших накладних витрат на операційну систему, тобто ви можете пакувати більше серверів у хості віртуалізації. Звучить жахливо, правда?
 
-## But here's the best reason
-Quite simply, the main reason to enable Remoting is that _you haven't got any choice._ Microsoft has moved firmly in this direction, and enables Remoting by default on Windows Server 2012 and later. The company _disables_ Remote Desktop by default, which should tell you something. 
+## Але ось найкраща причина
+Простіше кажучи, головна причина увімкнення віддаленого керування - це те, що _у вас немає вибору_. Microsoft твердо рухається в цьому напрямку та включає віддалене керування за замовчуванням на Windows Server 2012 та пізніших версіях. Компанія за замовчуванням _відключає_ віддалений робочий стіл, немовби натякаючи вам на щось.
 
-Further, in Nano Server, _logging onto the console isn't even an option_, whether you use Remote Desktop or not. There _is_ no local login. Remoting _is literally your only option_ for managing the server. That's going to be the case going forward.
+Крім того, на Nano Server _консольний логін навіть не є можливим_, використовуєте ви віддалений робочий стіл чи ні. Локального логіну немає. Віддалене керування, _буквально, єдиний варіант_ управління сервером. Саме так все і залишиться надалі. 
 
-Running a Windows environment without enabling Remoting - at least on servers - is like driving a car without wanting to depress the accelerator. It isn't much fun, and you aren't going to get very far.
+Працювати в середовищі Windows, не вмикаючи віддалене керування - принаймні на серверах - це як керувати автомобілем, не бажаючи натискати на газ. Це не дуже весело, і ви не заїдете  дуже далеко.
