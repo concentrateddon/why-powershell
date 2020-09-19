@@ -4,7 +4,7 @@ If you've ignored PowerShell up until now, or were skeptical about it, let's loo
 
 In **version 1**, PowerShell emerged as a the first management interface specifically designed for administrative automation. 
 
-In **version 2**, PowerShell gained native remote management capabilities, enabling remote management of any server or client running PowerShell. PowerShell's "reach" extended to hundreds of management APIs, enabling real-world management. The product also matured a deceptively simple, powerful scripting language that can be used to build professional-grade units of automation.
+In **version 2**, PowerShell gained native remote management capabilities, enabling remote management of any server or client running PowerShell. PowerShell's "reach" extended to hundreds of management APIs, enabling real-world management. The product also matured as deceptively simple, powerful scripting language that can be used to build professional-grade units of automation.
 
 In **version 3**, PowerShell learned to run long-running tasks in a disconnected, stateless fashion - called _workflows_. The product's reach extended even further, covering all major Microsoft server platforms, and pushing into Microsoft's cloud offerings. By this version, PowerShell was a very real thing, so much so that many Microsoft native GUIs began to use PowerShell "under the hood."
 
