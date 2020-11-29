@@ -1,16 +1,16 @@
-# Why Scripting? Why a Shell?
+# Навіщо писати скрипти? Чому саме Shell?
 
-Before we dive into PowerShell itself, let’s tackle the importance of scripting and automation, an integral facet of PowerShell.
+Перш ніж ми зануримось у PowerShell, давайте розглянемо його невід'ємний аспект, важливість скриптування та автоматизації.
 
-You’ve probably seen this [XKCD comic](http://xkcd.com/1205/) or something similar to justify scripting. While saving time is certainly a factor behind the importance of scripting and automation, it is hardly the only justification. 
+Напевно, ви бачили цей [комікс  з  XKCD](http://xkcd.com/1205/) або щось подібне, для зображення  важливості скриптування. Безумовно економія часу є важливим фактором в  підтримку скриптування та автоматизації, але далеко не єдиним.
 
-Here are a few others to consider:
+Ось декілька інших на які потрібно звернути увагу:
 
-* **Consistency**. A scripted solution will run the exact same script every time. No risk of typos, forgetting to complete the task, or doing the task incorrectly. _Reduce human error_. 
-* **Audit trail**. There are many tasks where having an audit trail would be helpful, perhaps including what task was performed, important results, errors that occurred, when the task ran, who ran it, and so forth. Scripts can provide this trail, and in PowerShell v5 and later, the shell itself features extensive logging capabilities.
-* **Modular code**. You might spend more time on a particular function than time savings justify, but you can generally re-use or borrow ideas from the code later.
-* **Documentation**. Is there documentation for the task? Is it up to date? A well written and commented script can generally serve as a helpful base level of documentation that might not exist for a manual task. In some cases, the script can document the process that it automates, helping to preserve institutional knowledge.
-* **Education**. Administrators who can automate tasks are almost always more well-versed in the technology as a result. That makes them better planners, architects, troubleshooters, and operators, all of which convey benefit to the organization.
-* **Delegation**. With a scripted solution, you can typically delegate more functions closer to the teams best equipped to handle them. With PowerShell v3 and later specifically, scripts can enable extremely granular delegation of tasks, helping the overall IT team become more efficient and responsive.
+* **Послідовність**. Розроблене рішення буде запускати ту саму послідовність дій кожного разу. Немає ризику опечаток,  виконання завдання не повністю або неправильно. _Зменшення впливу людського фактору_.
+* **Записи для аудиту**. Існує багато завдань, де присутність аудиту була б корисною, наприклад яке завдання було виконано, важливі результати, помилки, які виникли під час виконання, хто його виконував тощо. Скрипти можуть забезпечити ці записи, і PowerShell v5 та пізніші версії мають широкі можливості для логування.
+* **Модульний код**. Ви можете витратити більше часу на певну функцію ніж зекономити, але, як правило, ви можете повторно використати чи запозичити ідеї з коду функції в майбутньому.
+* **Документація**. Чи існує документація на завдання? Вона актуальна? Добре написаний та прокоментований скрипт, як правило є корисним базовим рівнем документації, яка не завжди існує для завдання яке виконується вручну. У деяких випадках скрипт документує процес, який він автоматизує, допомагаючи зберегти інституційні знання.
+* **Навчання**. Адміністратори які можуть автоматизовувати завдання, як правило більше розуміються в технології. Це робить їх кращими планувальниками, архітекторами, тими хто вирішує проблеми та операторами, що в свою чергу приносить користь організації.
+* **Делегування**. Зазвичай, за допомогою розробленого рішення можна делегувати більше функцій командам, які найбільше готові для вирішення проблем. Починаючи з PowerShell v3 скрипти забезпечують надзвичайно детальне делегування завдань, допомагаючи загальній ІТ-команді стати більш ефективною та адаптивною.
 
-The moral of the story is that scripting and automation is important, which is just one factor behind the value of learning PowerShell.
+Мораль розповіді полягає в тому, що скриптування та автоматизація є важливими, і є лише одним із факторів, що стоять за цінністю вивчення PowerShell.

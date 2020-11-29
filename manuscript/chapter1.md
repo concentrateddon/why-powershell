@@ -1,9 +1,10 @@
-# A Brief Overview
+# Короткий опис
 
-PowerShell enthusiasts often find themselves explaining why someone with responsibilities on the Microsoft side of the IT shop should learn PowerShell. We decided to write this as a reference going forward.
+PowerShell  eнтузіасти часто опиняються в ситуації коли потрібно пояснити чому хтось хто відповідальний за  Microsoft інфраструктуру  повинен вчити PowerShell. Ми вирішили написати цю книгу як довідку для майбутніх звернень.
 
-We won’t be arguing for PowerShell over other Microsoft languages such as VBScript or batch, or general purpose languages such as Python or Perl. There is a place for all of these languages, but if you work with the Microsoft and surrounding ecosystems, PowerShell is an important language to learn.
+Ми не будемо сперечатися щодо PowerShell та інших мов Microsoft, таких як VBScript або batch, а також мов програмування загального призначення, таких як Python або Perl.
+Всі ці мови мають право на існування, але якщо ви працюєте з Microsoft та прилеглими екосистемами, PowerShell є важливою мовою для вивчення.
 
-What's also important to understand is that _Microsoft has made an enormous commitment to PowerShell_. It isn't going away, and indeed the company is building more and more of their management solutions on top of it. To a degree, Microsoft is even backing off from building management tooling, knowing that you can use PowerShell to build your own tools. That's significant.
+Також важливо зрозуміти, що _Microsoft взяли на себе величезні зобов'язання щодо  PowerShell_. PowerShell нікуди не пропаде і справді компанія будує все більше і більше своїх рішень для керування на ньому. Певною мірою Microsoft навіть відступає від створення інструментів управління, знаючи, що ви можете використовувати PowerShell для створення власних інструментів. Цей факт має досить велике значення.
 
-But let's move on.
+Але давайте перейдемо до наступного розділу.
