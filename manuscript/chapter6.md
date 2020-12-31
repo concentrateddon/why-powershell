@@ -7,6 +7,7 @@ First, understand a couple of things - which are going to seem a bit rude. Sorry
 - Information technology is an industry of change. The perfectly reasonable decisions you made in 2003 are going to need to be periodically revisited, due to aforementioned change.
 
 With that out of the way, let's briefly talk about...
+
 ## What is PowerShell Remoting?
 Remoting is simply a way for management tools on one computer to talk to services on another computer, so that you can remotely manage those services. 
 
